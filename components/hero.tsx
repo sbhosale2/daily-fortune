@@ -30,17 +30,17 @@ export function Hero() {
 
 function FortuneCard() {
   return (
-    <div className="relative mx-auto w-full max-w-xs flex-1 sm:max-w-sm">
+    <div className="relative mx-auto w-full max-w-[16rem] sm:max-w-[18rem] md:mx-0 md:mr-8 lg:mr-12">
       <div
         aria-hidden="true"
-        className="absolute inset-0 -rotate-6 rounded-3xl border border-border bg-muted"
+        className="absolute inset-0 -translate-x-3 translate-y-2 -rotate-[4deg] rounded-3xl border border-border bg-muted"
       />
-      <figure className="relative flex aspect-[3/4] w-full rotate-3 flex-col justify-between rounded-3xl bg-primary p-8 text-primary-foreground shadow-[0_30px_80px_-30px_rgba(150,83,53,0.6)] md:p-10">
+      <figure className="relative flex aspect-[3/4] w-full rotate-[2deg] flex-col justify-between rounded-3xl bg-primary p-7 text-primary-foreground shadow-[0_30px_80px_-30px_rgba(150,83,53,0.6)] md:p-8">
         <div className="flex items-center justify-between text-xs font-medium uppercase tracking-[0.3em] text-primary-foreground/80">
           <span>Daily Fortune</span>
           <span>Today</span>
         </div>
-        <blockquote className="font-serif text-3xl font-medium leading-tight text-balance md:text-4xl">
+        <blockquote className="font-serif text-2xl font-medium leading-tight text-balance md:text-3xl">
           It turns a small daily ritual into something beautiful.
         </blockquote>
         <figcaption className="border-t border-primary-foreground/30 pt-5 text-xs font-medium uppercase tracking-[0.3em] text-primary-foreground/80">
