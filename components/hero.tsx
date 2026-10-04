@@ -33,7 +33,7 @@ function FortuneCard() {
     <div className="relative mx-auto w-full max-w-[16rem] sm:max-w-[18rem] md:mx-0 md:mr-8 lg:mr-12">
       <div
         aria-hidden="true"
-        className="absolute inset-0 translate-x-8 -translate-y-1 rotate-[7deg] rounded-3xl border border-primary/20 bg-muted shadow-[0_20px_50px_-25px_rgba(150,83,53,0.45)] md:translate-x-10"
+        className="absolute inset-0 translate-x-10 translate-y-3 rotate-[3deg] rounded-3xl border border-primary/20 bg-muted shadow-[0_20px_50px_-25px_rgba(150,83,53,0.45)] md:translate-x-14"
       />
       <figure className="relative flex aspect-[3/4] w-full rotate-[2deg] flex-col justify-between rounded-3xl bg-primary p-7 text-primary-foreground shadow-[0_30px_80px_-30px_rgba(150,83,53,0.6)] md:p-8">
         <div className="flex items-center justify-between text-xs font-medium uppercase tracking-[0.3em] text-primary-foreground/80">
