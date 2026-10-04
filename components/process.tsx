@@ -19,7 +19,7 @@ export function Process() {
   return (
     <section id="process" className="scroll-mt-20 border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-20 md:py-24">
-        <SectionLabel>The process</SectionLabel>
+        <SectionLabel>How it was made</SectionLabel>
         <h2 className="mt-4 max-w-2xl font-serif text-3xl font-medium leading-tight text-balance md:text-4xl">
           Designed end-to-end, from mood board to mockup.
         </h2>

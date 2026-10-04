@@ -12,8 +12,13 @@ export function ProjectLink({ variant = 'primary' }: { variant?: 'primary' | 'in
 
   if (!project.handshakeUrl) {
     return (
-      <span className={cn(base, styles, 'cursor-not-allowed opacity-60')} aria-disabled="true">
-        Handshake profile link coming soon
+      <span
+        className={cn(base, styles, 'cursor-not-allowed')}
+        aria-disabled="true"
+        title="Handshake profile link coming soon"
+      >
+        View on Handshake
+        <ArrowUpRight className="size-4" aria-hidden="true" />
       </span>
     )
   }

@@ -3,27 +3,22 @@ import { ProjectLink } from '@/components/project-link'
 
 export function Hero() {
   return (
-    <section id="top" className="mx-auto max-w-5xl px-6 pb-20 pt-16 md:pb-28 md:pt-24">
-      <div className="grid items-center gap-14 md:grid-cols-[1.2fr_1fr]">
-        <div>
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+    <section id="top" className="bg-background">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-16 px-6 pb-24 pt-14 md:flex-row md:gap-12 md:pb-32 md:pt-20">
+        <div className="flex-1">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary md:text-sm">
             A project by {project.author}
           </p>
-          <h1 className="mt-5 font-serif text-5xl font-medium leading-[1.05] text-balance md:text-7xl">
+          <h1 className="mt-6 font-serif text-6xl font-medium leading-[0.95] tracking-tight text-foreground sm:text-7xl lg:text-8xl">
             {project.name}
           </h1>
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground text-pretty">
-            One beautifully designed fortune card every morning — collect your
-            favorites and share the unhinged ones with friends.
+          <p className="mt-8 max-w-md text-lg leading-relaxed text-muted-foreground text-pretty">
+            Daily Fortune delivers one beautifully designed fortune card every
+            morning — collect your favorites and share the unhinged ones with
+            friends.
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-10">
             <ProjectLink />
-            <a
-              href="#process"
-              className="text-sm font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-            >
-              See the design process
-            </a>
           </div>
         </div>
 
@@ -35,22 +30,18 @@ export function Hero() {
 
 function FortuneCard() {
   return (
-    <div className="relative mx-auto w-full max-w-xs" aria-hidden="true">
-      <div className="absolute inset-0 translate-x-4 translate-y-4 rotate-3 rounded-3xl bg-primary/15" />
-      <div className="relative flex aspect-[3/4] flex-col justify-between rounded-3xl border border-primary/20 bg-card p-8 shadow-[0_20px_60px_-20px_rgba(150,83,53,0.35)]">
-        <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-primary">
-          <span>Daily</span>
-          <span className="size-2 rounded-full bg-primary" />
-          <span>Fortune</span>
-        </div>
-        <div className="text-center">
-          <div className="mx-auto mb-6 size-14 rounded-full bg-primary/90" />
-          <p className="font-serif text-2xl leading-snug text-balance">
-            One card, every morning.
-          </p>
-        </div>
-        <div className="h-px w-full bg-primary/20" />
+    <figure className="w-full max-w-sm flex-1 md:max-w-md">
+      <div className="mx-auto flex aspect-[3/4] w-full max-w-sm rotate-3 flex-col justify-between rounded-3xl bg-primary p-8 text-primary-foreground shadow-[0_30px_80px_-30px_rgba(150,83,53,0.6)] md:p-10">
+        <p className="text-xs font-medium uppercase tracking-[0.3em] text-primary-foreground/80">
+          Daily Fortune <span aria-hidden="true">•</span> Today
+        </p>
+        <blockquote className="font-serif text-3xl font-medium leading-tight text-balance md:text-4xl">
+          It turns a small daily ritual into something beautiful.
+        </blockquote>
+        <figcaption className="border-t border-primary-foreground/30 pt-5 text-xs font-medium uppercase tracking-[0.3em] text-primary-foreground/80">
+          One card, every morning
+        </figcaption>
       </div>
-    </div>
+    </figure>
   )
 }
