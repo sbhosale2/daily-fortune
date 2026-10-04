@@ -12,7 +12,10 @@ export function Hero() {
           <h1 className="mt-6 font-serif text-6xl font-medium leading-[0.95] tracking-tight text-foreground sm:text-7xl lg:text-8xl">
             {project.name}
           </h1>
-          <p className="mt-8 max-w-md text-lg leading-relaxed text-muted-foreground text-pretty">
+          <p className="mt-5 text-sm font-medium text-primary">
+            Now on GitHub — see how this site was built.
+          </p>
+          <p className="mt-6 max-w-md text-lg leading-relaxed text-muted-foreground text-pretty">
             Daily Fortune delivers one beautifully designed fortune card every
             morning — collect your favorites and share the unhinged ones with
             friends.
